@@ -1,0 +1,1248 @@
+{
+	"info": {
+		"_postman_id": "ed564e7c-b9c8-4144-8131-bf291386eb6a",
+		"name": "Project Quiz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24964231"
+	},
+	"item": [
+		{
+			"name": "accounts",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"htabir\",\n    \"password\": \"112358\"\n}\n\n\n// {\n//     \"username\": \"user1\",\n//     \"password\": \"112358\"\n// }\n\n// {\n//     \"username\": \"user2\",\n//     \"password\": \"112358\"\n// }\n\n// {\n//     \"username\": \"user3\",\n//     \"password\": \"112358\"\n// }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/accounts/v1/register/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"accounts",
+								"v1",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"htabir\",\n    \"password\": \"112358\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/accounts/v1/register/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"accounts",
+										"v1",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Dec 2022 18:03:50 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.5"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "137"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "djdt-store-id",
+									"value": "83030863b6814087a560a3f1b42cd2c6"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "TimerPanel_utime;dur=99.13099999999986;desc=\"User CPU time\", TimerPanel_stime;dur=6.708999999999854;desc=\"System CPU time\", TimerPanel_total;dur=105.83999999999972;desc=\"Total CPU time\", TimerPanel_total_time;dur=111.03987693786621;desc=\"Elapsed time\", SQLPanel_sql_time;dur=4.571676254272461;desc=\"SQL 5 queries\", CachePanel_total_time;dur=0;desc=\"Cache 0 Calls\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"19ecf70b718b451bb7a5f2bb65700c7015e40778\",\n    \"user_info\": {\n        \"id\": 2,\n        \"username\": \"htabir\",\n        \"date_joined\": \"2022-12-16T18:03:50.870625Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"htabir\",\n    \"password\": \"112358\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/accounts/v1/login/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"accounts",
+								"v1",
+								"login",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"htabir\",\n    \"password\": \"112358\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/accounts/v1/login/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"accounts",
+										"v1",
+										"login",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Dec 2022 18:04:47 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.5"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "137"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "djdt-store-id",
+									"value": "77b0521e4ace4fa3b67e7ee9fb5e4ebd"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "TimerPanel_utime;dur=87.345;desc=\"User CPU time\", TimerPanel_stime;dur=1.978999999999509;desc=\"System CPU time\", TimerPanel_total;dur=89.3239999999995;desc=\"Total CPU time\", TimerPanel_total_time;dur=91.54510498046875;desc=\"Elapsed time\", SQLPanel_sql_time;dur=0.7891654968261719;desc=\"SQL 2 queries\", CachePanel_total_time;dur=0;desc=\"Cache 0 Calls\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"19ecf70b718b451bb7a5f2bb65700c7015e40778\",\n    \"user_info\": {\n        \"id\": 2,\n        \"username\": \"htabir\",\n        \"date_joined\": \"2022-12-16T18:03:50.870625Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/accounts/v1/users/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"accounts",
+								"v1",
+								"users",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token {{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/accounts/v1/users/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"accounts",
+										"v1",
+										"users",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Dec 2022 20:14:29 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.5"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "220"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "djdt-store-id",
+									"value": "3402ee49b61d4652a1d87ead008299f8"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "TimerPanel_utime;dur=42.848;desc=\"User CPU time\", TimerPanel_stime;dur=32.06300000000001;desc=\"System CPU time\", TimerPanel_total;dur=74.911;desc=\"Total CPU time\", TimerPanel_total_time;dur=79.64110374450684;desc=\"Elapsed time\", SQLPanel_sql_time;dur=0.6604194641113281;desc=\"SQL 6 queries\", CachePanel_total_time;dur=0;desc=\"Cache 0 Calls\""
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"username\": \"admin\",\n        \"date_joined\": \"2022-12-16T18:01:35.720582Z\",\n        \"avg_score\": 0,\n        \"completed_quizzes\": 0\n    },\n    {\n        \"id\": 2,\n        \"username\": \"htabir\",\n        \"date_joined\": \"2022-12-16T18:03:50.870625Z\",\n        \"avg_score\": 2,\n        \"completed_quizzes\": 1\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "quiz",
+			"item": [
+				{
+					"name": "questions-create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"options\": [\n        {\n            \"text\": \"Dhaka\",\n            \"is_correct\": true\n        },\n        {\n            \"text\": \"Chittagong\"\n        },\n        {\n            \"text\": \"Sylhet\"\n        }\n    ],\n    \"text\": \"What is the capital of bangladesh?\",\n    \"description\": \"\"\n}\n\n// {\n//     \"options\": [\n//         {\n//             \"text\": \"PyCharm\",\n//             \"is_correct\": true\n//         },\n//         {\n//             \"text\": \"VSCode\",\n//              \"is_correct\": true\n//         },\n//         {\n//             \"text\": \"Something\"\n//         }\n//     ],\n//     \"text\": \"Best IDE for django?\",\n//     \"description\": \"\"\n// }\n\n// {\n//     \"options\": [\n//         {\n//             \"text\": \"Dummy Text\",\n//             \"is_correct\": true\n//         },\n//         {\n//             \"text\": \"Use it\"\n//         },\n//         {\n//             \"text\": \"Come From\"\n//         }\n//     ],\n//     \"text\": \"Lorem Ipsum is simply?\",\n//     \"description\": \"\"\n// }\n\n// {\n//     \"options\": [\n//         {\n//             \"text\": \"40 BC\"\n//         },\n//         {\n//             \"text\": \"45 BC\",\n//             \"is_correct\": true\n//         },\n//         {\n//             \"text\": \"56 BC\"\n//         }\n//     ],\n//     \"text\": \"Lorem Ipsum From?\",\n//     \"description\": \"\"\n// }\n\n// {\n//     \"options\": [\n//         {\n//             \"text\": \"Electronic\"\n//         },\n//         {\n//             \"text\": \"Industry Standard\",\n//             \"is_correct\": true\n//         },\n//         {\n//             \"text\": \"Commonly Used\",\n//             \"is_correct\": true\n//         }\n//     ],\n//     \"text\": \"Lorem Ipsum has been?\",\n//     \"description\": \"\"\n// }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/quiz/v1/questions/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quiz",
+								"v1",
+								"questions",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "questions-list-create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"options\": [\n        {\n            \"text\": \"Dhaka\",\n            \"is_correct\": true\n        },\n        {\n            \"text\": \"Chittagong\"\n        },\n        {\n            \"text\": \"Sylhet\"\n        }\n    ],\n    \"text\": \"What is the capital of bangladesh?\",\n    \"description\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/quiz/v1/questions/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"quiz",
+										"v1",
+										"questions",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Dec 2022 18:34:54 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.5"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "306"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "djdt-store-id",
+									"value": "043001bf20684ffeb8dbe906bebf234b"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "TimerPanel_utime;dur=50.579999999999956;desc=\"User CPU time\", TimerPanel_stime;dur=34.67000000000004;desc=\"System CPU time\", TimerPanel_total;dur=85.25;desc=\"Total CPU time\", TimerPanel_total_time;dur=91.55392646789551;desc=\"Elapsed time\", SQLPanel_sql_time;dur=2.0360946655273438;desc=\"SQL 9 queries\", CachePanel_total_time;dur=0;desc=\"Cache 0 Calls\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"options\": [\n        {\n            \"id\": 3,\n            \"text\": \"Sylhet\",\n            \"is_correct\": false\n        },\n        {\n            \"id\": 2,\n            \"text\": \"Chittagong\",\n            \"is_correct\": false\n        },\n        {\n            \"id\": 1,\n            \"text\": \"Dhaka\",\n            \"is_correct\": true\n        }\n    ],\n    \"created_date\": \"2022-12-16T18:34:54.222202Z\",\n    \"modified_date\": \"2022-12-16T18:34:54.222222Z\",\n    \"text\": \"What is the capital of bangladesh?\",\n    \"description\": \"\"\n}"
+						},
+						{
+							"name": "questions-list-create-no-answer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"options\": [\n        {\n            \"text\": \"Dhaka\"\n        },\n        {\n            \"text\": \"Chittagong\"\n        },\n        {\n            \"text\": \"Sylhet\"\n        }\n    ],\n    \"text\": \"What is the capital of bangladesh?\",\n    \"description\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/quiz/v1/questions/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"quiz",
+										"v1",
+										"questions",
+										""
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Dec 2022 18:35:06 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.5"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "64"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "djdt-store-id",
+									"value": "ff56ba2f621441469bc3558458fea403"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "TimerPanel_utime;dur=13.095999999999997;desc=\"User CPU time\", TimerPanel_stime;dur=3.018000000000076;desc=\"System CPU time\", TimerPanel_total;dur=16.114000000000072;desc=\"Total CPU time\", TimerPanel_total_time;dur=19.986867904663086;desc=\"Elapsed time\", SQLPanel_sql_time;dur=1.402139663696289;desc=\"SQL 1 queries\", CachePanel_total_time;dur=0;desc=\"Cache 0 Calls\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"non_field_errors\": [\n        \"At least one correct option is required\"\n    ]\n}"
+						},
+						{
+							"name": "questions-list-create-less-options",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"options\": [\n        {\n            \"text\": \"Dhaka\",\n            \"is_correct\": true\n        }\n    ],\n    \"text\": \"What is the capital of bangladesh?\",\n    \"description\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/quiz/v1/questions/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"quiz",
+										"v1",
+										"questions",
+										""
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Dec 2022 18:35:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.5"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "djdt-store-id",
+									"value": "515ae795e06244dd8f413130a3a61a04"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "TimerPanel_utime;dur=13.765000000000027;desc=\"User CPU time\", TimerPanel_stime;dur=3.222000000000058;desc=\"System CPU time\", TimerPanel_total;dur=16.987000000000087;desc=\"Total CPU time\", TimerPanel_total_time;dur=24.310827255249023;desc=\"Elapsed time\", SQLPanel_sql_time;dur=1.631021499633789;desc=\"SQL 1 queries\", CachePanel_total_time;dur=0;desc=\"Cache 0 Calls\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"non_field_errors\": [\n        \"At least two options are required\"\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "question-update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"options\": [\n        {\n            \"text\": \"PyCharm\",\n            \"is_correct\": true\n        },\n        {\n            \"text\": \"VSCode\",\n            \"is_correct\": true\n        },\n        {\n            \"text\": \"Something\"\n        }\n    ],\n    \"text\": \"Best IDE for django?\",\n    \"description\": \"What is the easiest one to code with?\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/quiz/v1/questions/item/?id=3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quiz",
+								"v1",
+								"questions",
+								"item",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "question-list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/quiz/v1/questions/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quiz",
+								"v1",
+								"questions",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "quiz-create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"question_count\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/quiz/v1/quizzes/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quiz",
+								"v1",
+								"quizzes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "quiz-item",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/quiz/v1/quizzes/item/?id=4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quiz",
+								"v1",
+								"quizzes",
+								"item",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "quiz-item-answer",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"answers\": [\n        {\n            \"question_id\": 3,\n            \"options_id\": [11, 10]\n        },\n        {\n            \"question_id\": 2,\n            \"options_id\": [8]\n        },\n        {\n            \"question_id\": 1,\n            \"options_id\": [4]\n        }\n\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/quiz/v1/quizzes/item/?id=4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quiz",
+								"v1",
+								"quizzes",
+								"item",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "quiz-item-answer",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"answers\": [\n        {\n            \"question_id\": 3,\n            \"options_id\": [11, 10]\n        },\n        {\n            \"question_id\": 2,\n            \"options_id\": [8]\n        },\n        {\n            \"question_id\": 1,\n            \"options_id\": [4]\n        }\n\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/quiz/v1/quizzes/item/?id=4",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"quiz",
+										"v1",
+										"quizzes",
+										"item",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Dec 2022 19:56:45 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.5"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1014"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "djdt-store-id",
+									"value": "155b0b9188034626b9ec0b204e56aab9"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "TimerPanel_utime;dur=89.153;desc=\"User CPU time\", TimerPanel_stime;dur=31.898999999999983;desc=\"System CPU time\", TimerPanel_total;dur=121.05199999999999;desc=\"Total CPU time\", TimerPanel_total_time;dur=128.04412841796875;desc=\"Elapsed time\", SQLPanel_sql_time;dur=2.8951168060302734;desc=\"SQL 21 queries\", CachePanel_total_time;dur=0;desc=\"Cache 0 Calls\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 4,\n    \"questions\": [\n        {\n            \"id\": 3,\n            \"options\": [\n                {\n                    \"id\": 12,\n                    \"text\": \"Something\",\n                    \"is_correct\": false\n                },\n                {\n                    \"id\": 11,\n                    \"text\": \"VSCode\",\n                    \"is_correct\": true\n                },\n                {\n                    \"id\": 10,\n                    \"text\": \"PyCharm\",\n                    \"is_correct\": true\n                }\n            ],\n            \"created_date\": \"2022-12-16T19:00:22.296791Z\",\n            \"modified_date\": \"2022-12-16T19:00:22.296833Z\",\n            \"text\": \"Best IDE for django?\",\n            \"description\": \"\"\n        },\n        {\n            \"id\": 2,\n            \"options\": [\n                {\n                    \"id\": 9,\n                    \"text\": \"Meh\",\n                    \"is_correct\": false\n                },\n                {\n                    \"id\": 8,\n                    \"text\": \"Boring\",\n                    \"is_correct\": false\n                },\n                {\n                    \"id\": 7,\n                    \"text\": \"Fun\",\n                    \"is_correct\": true\n                }\n            ],\n            \"created_date\": \"2022-12-16T18:59:36.824942Z\",\n            \"modified_date\": \"2022-12-16T18:59:36.824979Z\",\n            \"text\": \"Lorem Ipsum is?\",\n            \"description\": \"\"\n        },\n        {\n            \"id\": 1,\n            \"options\": [\n                {\n                    \"id\": 6,\n                    \"text\": \"Sylhet\",\n                    \"is_correct\": false\n                },\n                {\n                    \"id\": 5,\n                    \"text\": \"Chittagong\",\n                    \"is_correct\": false\n                },\n                {\n                    \"id\": 4,\n                    \"text\": \"Dhaka\",\n                    \"is_correct\": true\n                }\n            ],\n            \"created_date\": \"2022-12-16T18:58:57.008702Z\",\n            \"modified_date\": \"2022-12-16T18:58:57.008758Z\",\n            \"text\": \"What is the capital of bangladesh?\",\n            \"description\": \"\"\n        }\n    ],\n    \"created_date\": \"2022-12-16T19:00:58.015114Z\",\n    \"modified_date\": \"2022-12-16T19:56:45.834289Z\",\n    \"score\": 2,\n    \"user\": 2\n}"
+						},
+						{
+							"name": "quiz-item-answer",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"answers\": [\n        {\n            \"question_id\": 3,\n            \"options_id\": [11, 10]\n        },\n        {\n            \"question_id\": 2,\n            \"options_id\": [8]\n        }\n\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/quiz/v1/quizzes/item/?id=4",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"quiz",
+										"v1",
+										"quizzes",
+										"item",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Dec 2022 19:50:49 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.5"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "24"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "djdt-store-id",
+									"value": "289f1fe5cbca4c5b9d1d2dff4526cd83"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "TimerPanel_utime;dur=14.61200000000007;desc=\"User CPU time\", TimerPanel_stime;dur=4.126999999999992;desc=\"System CPU time\", TimerPanel_total;dur=18.73900000000006;desc=\"Total CPU time\", TimerPanel_total_time;dur=25.05207061767578;desc=\"Elapsed time\", SQLPanel_sql_time;dur=3.571748733520508;desc=\"SQL 4 queries\", CachePanel_total_time;dur=0;desc=\"Cache 0 Calls\""
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"Invalid answer count\"\n]"
+						},
+						{
+							"name": "quiz-item-answer",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"answers\": [\n        {\n            \"question_id\": 3,\n            \"options_id\": [11, 10]\n        },\n        {\n            \"options_id\": [8]\n        }\n\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/quiz/v1/quizzes/item/?id=4",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"quiz",
+										"v1",
+										"quizzes",
+										"item",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Dec 2022 19:51:10 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.5"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "48"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "djdt-store-id",
+									"value": "a0c7edfbdc6e45adb44f1b6b45283f03"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "TimerPanel_utime;dur=8.610999999999924;desc=\"User CPU time\", TimerPanel_stime;dur=1.6419999999999213;desc=\"System CPU time\", TimerPanel_total;dur=10.252999999999846;desc=\"Total CPU time\", TimerPanel_total_time;dur=22.829055786132812;desc=\"Elapsed time\", SQLPanel_sql_time;dur=0.9968280792236328;desc=\"SQL 2 queries\", CachePanel_total_time;dur=0;desc=\"Cache 0 Calls\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"non_field_errors\": [\n        \"Question id is required\"\n    ]\n}"
+						},
+						{
+							"name": "quiz-item-answer",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"answers\": [\n        {\n            \"question_id\": 3,\n            \"options_id\": [11, 10]\n        },\n        {\n            \"question_id\": 2\n        }\n\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/quiz/v1/quizzes/item/?id=4",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"quiz",
+										"v1",
+										"quizzes",
+										"item",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Dec 2022 19:51:23 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.5"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "46"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "djdt-store-id",
+									"value": "696b6eef46984bd09e862b7be1f0f1b8"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "TimerPanel_utime;dur=14.429000000000025;desc=\"User CPU time\", TimerPanel_stime;dur=2.507000000000037;desc=\"System CPU time\", TimerPanel_total;dur=16.936000000000064;desc=\"Total CPU time\", TimerPanel_total_time;dur=19.295930862426758;desc=\"Elapsed time\", SQLPanel_sql_time;dur=1.0609626770019531;desc=\"SQL 2 queries\", CachePanel_total_time;dur=0;desc=\"Cache 0 Calls\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"non_field_errors\": [\n        \"Option id is required\"\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1:8000"
+		},
+		{
+			"key": "token",
+			"value": "19ecf70b718b451bb7a5f2bb65700c7015e40778"
+		}
+	]
+}
