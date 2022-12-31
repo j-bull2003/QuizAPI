@@ -1,2 +1,0 @@
-# Valearnis
-Quiz_Interview
