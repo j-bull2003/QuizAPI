@@ -1,5 +1,5 @@
 # QUIZ API
-#### Quick Video Demo:  <https://youtu.be/6uSlg5Su8Bc>
+#### Quick Video Demo:  <https://youtu.be/UlwM6yr8QvY>
 #### Description: Using Django, I've create a simple API which serves quiz content, evaluates answers provided for the quiz questions, and then serves the results. The quizzes should contain questions with multiple answers to choose from.
  
 #### I've created two question types:
@@ -12,4 +12,5 @@
 
 #### Discource: 
 #### Consequently, I understand the crucial need to provide better developed resources to students that have the ability to comply directly with the Australian curriculum in a clear and cohesive manner. I believe in the importance of connecting teachers and students nationwide to create an opulent learning environment and help students feel more involved and connected to their classmates. Thus, improving the productivity, transparency of learning, and simplicity of these educational online models is something I am very passionate about and I am willing to devote my full creative capabilities to generating something up to date and innovative to Australian students. With Valearnis, I believe the possibilities are endless; creating a platform that could potentially provide different curriculums equivalent to all states of Australia and support an attitude of educational levels, and with my skills in web development we can create a software application that alters the future of remote education. 
+
 
